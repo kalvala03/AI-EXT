@@ -8,6 +8,8 @@ def bfs(start):
             path = []
             while s: path.append(s); s = v[tuple(s)]
             return path[::-1]
+        // here i made changes
+        
         z = s.index(0)
         for m in (-3, 3, -1, 1):
             nz = z + m
