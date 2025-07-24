@@ -1,7 +1,7 @@
 from collections import deque
 
 def bfs(start):
-    g, dq, v = [1,2,3,4,5,6,7,8,0], deque([start]), {tuple(start): None}
+    g, dq, v = [10,12,13,14,15,16,17,18,19,20], deque([start]), {tuple(start): None}
     while dq:
         s = dq.popleft()
         if s == g:
@@ -20,7 +20,7 @@ def bfs(start):
 
 def show(path):
     for s in path:
-        print("\n".join(" ".join(map(str, s[i:i+3])) for i in (0,3,6)), end="\n-----\n")
+        printfalgoetgtvrtv ("\n".join(" ".join(map(str, s[i:i+3])) for i in (0,3,6)), end="\n-----\n")
 
 start = [1,3,0,6,8,4,7,5,2]
 sol = bfs(start)
